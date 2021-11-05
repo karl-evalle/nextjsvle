@@ -9,6 +9,7 @@ const Offices = () => {
                 return(
                     <div  className="container bg-gray-700 items-stretch text-white rounded-md text-center">
                     <>
+                    <h1>key={index}</h1>
                     <h1>{collegeitem.college}</h1>
                     <h1>{collegeitem.officehours}</h1>
                     </>

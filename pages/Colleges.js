@@ -52,7 +52,9 @@ export const Colleges = [
         officehours: 'Mon-Fri 9:00am to 4:00pm'
     },
     {
-        college:'College of Law',
+        college:'College of Law ',
         officehours: 'Mon-Fri 9:00am to 4:00pm'
     }
 ]
+
+export default Colleges

@@ -7,9 +7,9 @@ const Offices = () => {
         <div className="grid grid-cols-3 gap-60">
             {Colleges.map((collegeitem, index) =>{
                 return(
-                    <div  className="container bg-gray-700 items-stretch text-white rounded-md text-center">
+                    <div key={index} className="container bg-gray-700 items-stretch text-white rounded-md text-center">
                     <>
-                    <h1>key={index}</h1>
+                    
                     <h1>{collegeitem.college}</h1>
                     <h1>{collegeitem.officehours}</h1>
                     </>

@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Mainsection from './mainsection'
 import Announcements from './announcements'
+import Helpdesk from './helpdesk'
+import Accordion from '../components/Accordion'
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <Navbar/>
       <Mainsection/>
       <Announcements/>
+      <Helpdesk/>
+     <Accordion/>
       
     </div>
   )

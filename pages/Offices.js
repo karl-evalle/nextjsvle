@@ -1,11 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Colleges } from './Colleges'
 
-function Offices({collegename,officedescription}) {
+const Offices = () => {
     return (
-        <div className="container bg-gray-700 h-28 w-64 text-white rounded-md text-center">
-            <h1 className="text-bold text-xl">{collegename}</h1>
-            <h1>{officedescription}</h1>
+        <div className="grid grid-cols-3 gap-60">
+            {Colleges.map((collegeitem, index) =>{
+                return(
+                    <div  className="container bg-gray-700 items-stretch text-white rounded-md text-center">
+                    <>
+                    <h1>{collegeitem.college}</h1>
+                    <h1>{collegeitem.officehours}</h1>
+                    </>
+                    </div>
+                )
+            })}
         </div>
     )
 }

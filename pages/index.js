@@ -20,20 +20,11 @@ export default function Home() {
       <Navbar/>
       <Mainsection/>
       <Announcements/>
-      <div className="items-center">
-          <div className="grid grid-cols-3 gap-4 ">
+      <div className="flex-1 items-stretch">
+     
         
-        <Offices collegename="College of Arts and Sciences" officedescription="7am-9pm"/>
-        <Offices collegename="College of Civil Engineering" officedescription="7am-9pm"/>
-        <Offices collegename="College of Education" officedescription="7am-9pm"/>
-        <Offices collegename="College of College of Medicine" officedescription="7am-9pm"/>
-        <Offices collegename="College of Nursing" officedescription="7am-9pm"/>
-        <Offices collegename="College of Bebe Liza Mariel" officedescription="7am-9pm"/>
-        <Offices collegename="College of College of Communication" officedescription="7am-9pm"/>
-        <Offices collegename="College of Engineering and Architecture" officedescription="7am-9pm"/>
-        <Offices collegename="College of Music" officedescription="7am-9pm"/>
-        
-        </div>
+        <Offices/>
+
       </div>
       
       

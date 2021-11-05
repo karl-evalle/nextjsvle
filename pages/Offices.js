@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Colleges } from './Colleges'
+import { Colleges } from '../components/Colleges'
 
 const Offices = () => {
     return (

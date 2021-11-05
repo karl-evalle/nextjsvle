@@ -4,6 +4,9 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Mainsection from './mainsection'
 import Announcements from './announcements'
+import Testing from './testing'
+import Offices from './Offices'
+
 
 
 export default function Home() {
@@ -17,6 +20,21 @@ export default function Home() {
       <Navbar/>
       <Mainsection/>
       <Announcements/>
+      <div className="items-center">
+          <div className="grid grid-cols-3 gap-4 ">
+        
+        <Offices collegename="College of Arts and Sciences" officedescription="7am-9pm"/>
+        <Offices collegename="College of Civil Engineering" officedescription="7am-9pm"/>
+        <Offices collegename="College of Education" officedescription="7am-9pm"/>
+        <Offices collegename="College of College of Medicine" officedescription="7am-9pm"/>
+        <Offices collegename="College of Nursing" officedescription="7am-9pm"/>
+        <Offices collegename="College of Bebe Liza Mariel" officedescription="7am-9pm"/>
+        <Offices collegename="College of College of Communication" officedescription="7am-9pm"/>
+        <Offices collegename="College of Engineering and Architecture" officedescription="7am-9pm"/>
+        <Offices collegename="College of Music" officedescription="7am-9pm"/>
+        
+        </div>
+      </div>
       
       
     </div>

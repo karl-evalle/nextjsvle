@@ -1,6 +1,7 @@
 
 import React from 'react'
 
+
 const Navbar = () => {
     return (
         <nav className="flex items-center justify-between flex-wrap bg-green-700 p-6">
@@ -18,6 +19,7 @@ const Navbar = () => {
       <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
         Announcements
       </a>
+      
       <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
         About
       </a>

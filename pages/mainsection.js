@@ -2,9 +2,9 @@ import React from 'react'
 
 const mainsection = () => {
     return (
-        <div className="container bg-main-image bg-no-repeat bg-cover mx-auto flex">
-        <div className="grid grid-cols-2 gap-4">
-              <div className="container mx-auto bg-green-500 hover:bg-gray-400 transition duration-500 ease-in-out text-center h-96 w-60 grid-col-1 m-40 rounded-lg" onClick={(e) => {
+        <div className="container bg-main-image bg-no-repeat bg-cover mx-auto w-full">
+       <div className="lg:flex">
+              <div className="container mx-auto bg-green-700 hover:bg-gray-400 transition duration-500 ease-in-out text-center h-96 w-60 grid-col-1 m-40 rounded-lg" onClick={(e) => {
       e.preventDefault();
       window.location.href='https://collvle.neu.edu.ph/login/index.php';
       }}>

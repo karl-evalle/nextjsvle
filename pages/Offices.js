@@ -6,10 +6,10 @@ const Offices = () => {
     return (
      <div>
          <div className="text-bold text-xl">Connect with our offices Virtually</div>
-            <div className="grid grid-cols-3 gap-60">
+            <div className="lg:grid grid-cols-3  ">
             {Colleges.map((collegeitem, index) =>{
                 return(
-                    <div key={index} className="container  bg-gray-500 h-40 w-60  text-white rounded-md  text-center hover:animate-bounce ">
+                    <div key={index} className="container  bg-gray-500 h-40 w-60  text-white rounded-md  text-center m-10 ">
                     <>
                     <h1>{collegeitem.college}</h1>
                     <h1>{collegeitem.officehours}</h1>

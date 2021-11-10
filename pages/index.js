@@ -19,10 +19,8 @@ export default function Home() {
       </Head>
       <Navbar/>
       <Mainsection/>
-      <Announcements/>
-      <div className="flex-1 items-stretch">
-     
-        
+      <Announcements/> 
+      <div className="flex-1">
         <Offices/>
 
       </div>

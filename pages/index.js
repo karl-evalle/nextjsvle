@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar'
 import Mainsection from './mainsection'
 import Announcements from './announcements'
 import Testing from './testing'
-import Offices from './offices'
-import Helpdesk from './helpdesk'
+import Offices from './Offices'
+import Helpdesk from './Helpdesk'
 import Accordion from '../components/accordion'
 
 

@@ -12,16 +12,34 @@ export async function getStaticProps(){
   }
 
   const userlist = ({users}) =>
-  <div>
-  <h1 classname="text-4xl">Users</h1>
-  <div className="bg-gray-700 text-center text-4xl">
-  {users.map(user =>(
-          <h1 key={user.id}>{user.username}</h1>
-        
+  
+  <div className="min-h-screen px-4 py-12 sm:px-6 lg:px 8">
+<h1 classname="text-4xl">Users</h1>
+  <div className="w-full">
+    {users.length > 0 && (
+        <table className="table-auto">
+        <thead>
+          <tr>
+            <th className='w-6/12' scope ='col'>
+              Username
+            </th>
+            <th className='w-6/12' scope ='col'>
+              Password
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user) => (
+            <tr key={user.id}>
+              <td>{user.username}</td>
+              <td>{user.password}</td>
+            </tr>
+          ))}
+        </tbody>
+  
+      </table>
       )
-      
-      )}
-     
+    }
   </div>
   
     </div>

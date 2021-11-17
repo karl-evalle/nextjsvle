@@ -14,7 +14,7 @@ export async function getStaticProps(){
   const userlist = ({users}) =>
   
   <div className="min-h-screen px-4 py-12 sm:px-6 lg:px 8">
-<h1 classname="text-4xl">Users</h1>
+<h1 className="text-4xl">Users</h1>
   <div className="w-full">
     {users.length > 0 && (
         <table className="table-auto">

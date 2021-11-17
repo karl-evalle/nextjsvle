@@ -10,7 +10,9 @@ module.exports = {
   },
   variants: {
     extend: {
-      animation: ['hover', 'group-hover'] 
+      animation: ['hover', 'group-hover'] ,
+      translate: ['group-hover']
+      
     },
   },
   plugins: [],

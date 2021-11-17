@@ -6,6 +6,8 @@ import Mainsection from './mainsection'
 import Announcements from './announcements'
 import Testing from './testing'
 import Offices from './Offices'
+import Helpdesk from './Helpdesk'
+import Accordion from '../components/accordion'
 
 
 
@@ -21,6 +23,7 @@ export default function Home() {
       <Mainsection/>
       <Announcements/> 
       <Offices/>
+      <Accordion title="Click Me!" content="this is content 1" />
       
     </div>
   )

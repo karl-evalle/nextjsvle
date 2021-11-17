@@ -1,7 +1,7 @@
-import { PrismaClient } from ".prisma/client";
+
 import prisma from "../lib/prisma";
 
-const prisma = new PrismaClient();
+
 
 export async function getStaticProps(){
     const users = await prisma.vleuser.findMany()

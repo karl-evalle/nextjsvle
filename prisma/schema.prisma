@@ -8,7 +8,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+   url = "mysql://00csx14del1n:************@lwi1ljywjvw6.ap-northeast-2.psdb.cloud/vle?sslaccept=strict"
   shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
   referentialIntegrity = "prisma"
 }

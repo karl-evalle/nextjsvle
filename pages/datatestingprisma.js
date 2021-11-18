@@ -11,5 +11,7 @@ export async function getStaticProps(){
     }
   }
 
+  const userlist = ({users}) =>
   
-    
+  <div></div>
+  export default userlist

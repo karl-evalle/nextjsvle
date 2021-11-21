@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
+
 export default function signin() {
     return (
         <div className="min-h-screen flex items-center justify-center bg-green-700">
-            <div className="container bg-gray-700 mx-auto justify-center flex flex-col h-72 w-72 rounded-lg items-center">
+            <div className="container bg-white mx-auto justify-center flex flex-col h-80 w-80 rounded-lg items-center">
             <Image
         
         alt ={'announements page'}
@@ -13,11 +14,15 @@ export default function signin() {
         width ='70'
             />
                 <h1 className="text-white"> Sign in</h1>
-                <input type="text" className="w-40 rounded "></input>
-                <p className="text-white">username</p>
-                <input type="text" className="w-40 rounded "></input>
-                <p className="text-white">password</p>
-                <button className="transition-all rounded border-2 w-20 mx-auto text-white hover:bg-white text-black">sign in</button>
+                <div class="relative m-3">
+                    <input type="text" id="username" class="border-b py-1 focus:border-green-300 focus:outline-none focus:text-green-700 focus:border-b-2 transition-colors peer" autocomplete="off"/>
+                     <label for="username" class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-700 transition-all">Username</label>
+                 </div>
+                <div class="relative m-3">
+                    <input type="text" id="username" class="border-b py-1 focus:outline-none focus:text-green-700 focus:border-b-2 transition-colors peer" autocomplete="off"/>
+                     <label for="username" class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-700 transition-all">Password</label>
+                 </div>
+                <button className="transition-all bg-green-500 rounded border-2 w-20 mx-auto text-white hover:bg-green-700 hover:text-black">sign in</button>
                 <a>forgot password?</a>
 
             </div>

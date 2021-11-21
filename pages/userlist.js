@@ -1,29 +1,27 @@
+import React from 'react'
+import {useState} from 'react'
+import prisma from '../lib/prisma'
 
-import { data } from "autoprefixer";
-import { useState } from "react";
-import prisma from "../lib/prisma";
+export default function userlist({users}) {
+    const [formData, setFormData] = useState({})
+    const [user, setUsers] = useState(users)
+   
 
+    async function saveUser(e){
+        e.preventDefault()
+        setUsers([...users,formData])
+        const response = await fetch('/api/users', {
+          method: 'POST',
+          body:JSON.stringify(formData)
+        })
+    
+    
+        return await response.json()
+    }
 
-
-const [users, setUsers] = useState(data)
-
-async function saveUser(e){
-    e.preventDefault()
-    setUsers([...users,formData])
-    const response = await fetch('/api/users', {
-      method: 'POST',
-      body:JSON.stringify(formData)
-    })
-
-
-    return await response.json()
-}
-
-  const userlist = ({users}) =>
-
-  
-  
-  <div className="min-h-screen px-4 py-12 sm:px-6 lg:px 8">
+    return (
+        <div>
+             <div className="min-h-screen px-4 py-12 sm:px-6 lg:px 8">
 <h1 className="text-4xl">Users</h1>
   <div className="w-full">
     {users.length > 0 && (
@@ -64,15 +62,16 @@ async function saveUser(e){
   </div>
   
     </div>
-
-export async function getStaticProps(){
-  const users = await prisma.vleuser.findMany()
-  
-
-  return {
-    props: { users } // will be passed to the page component as props
-  }
-
+        </div>
+    )
 }
 
-  export default userlist
+export async function getStaticProps(){
+    const users = await prisma.vleuser.findMany()
+    
+  
+    return {
+      props: { users } // will be passed to the page component as props
+    }
+  
+  }

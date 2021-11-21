@@ -66,7 +66,7 @@ export default function Userlist({users}) {
     )
 }
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
     const users = await prisma.vleuser.findMany()
     
   

@@ -14,13 +14,13 @@ export default function signin() {
         width ='70'
             />
                 <h1 className="text-white"> Sign in</h1>
-                <div class="relative m-3">
-                    <input type="text" id="username" class="border-b py-1 focus:border-green-300 focus:outline-none focus:text-green-700 focus:border-b-2 transition-colors peer" autocomplete="off"/>
-                     <label for="username" class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-700 transition-all">Username</label>
+                <div className="relative m-3">
+                    <input type="text" id="username" className="border-b py-1 focus:border-green-300 focus:outline-none focus:text-green-700 focus:border-b-2 transition-colors peer" autocomplete="off"/>
+                     <label for="username" className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-700 transition-all">Username</label>
                  </div>
-                <div class="relative m-3">
-                    <input type="text" id="username" class="border-b py-1 focus:outline-none focus:text-green-700 focus:border-b-2 transition-colors peer" autocomplete="off"/>
-                     <label for="username" class="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-700 transition-all">Password</label>
+                <div className="relative m-3">
+                    <input type="text" id="username" className="border-b py-1 focus:outline-none focus:text-green-700 focus:border-b-2 transition-colors peer" autocomplete="off"/>
+                     <label for="username" className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-700 transition-all">Password</label>
                  </div>
                 <button className="transition-all bg-green-500 rounded border-2 w-20 mx-auto text-white hover:bg-green-700 hover:text-black">sign in</button>
                 <a>forgot password?</a>

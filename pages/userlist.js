@@ -2,7 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import prisma from '../lib/prisma'
 
-export default function userlist({users}) {
+export default function Userlist({users}) {
     const [formData, setFormData] = useState({})
     const [user, setUsers] = useState(users)
    

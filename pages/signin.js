@@ -15,7 +15,7 @@ export default function signin() {
             />
                 <h1 className="text-white"> Sign in</h1>
                 <div className="relative m-3">
-                    <input type="text" id="username" className="border-b py-1 focus:border-green-300 focus:outline-none focus:text-green-700 focus:border-b-2 transition-colors peer" autocomplete="off"/>
+                    <input type="text" id="username" className="border-b py-1 focus:border-green-300 focus:outline-none focus:text-green-700 focus:border-b-2 transition-colors peer" autoComplete="off"/>
                      <label htmlFor="username" className="absolute left-0 top-1 text-gray-600 cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-green-700 transition-all">Username</label>
                  </div>
                 <div className="relative m-3">

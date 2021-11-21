@@ -5,24 +5,10 @@ import prisma from "../lib/prisma";
 
 
 
-const [users, setUsers] = useState(data)
 
-async function saveUser(e){
-    e.preventDefault()
-    setUsers([...users,formData])
-    const response = await fetch('/api/users', {
-      method: 'POST',
-      body:JSON.stringify(formData)
-    })
-
-
-    return await response.json()
-}
-
-  const userlist = ({users}) =>
 
   
-  
+
   <div className="min-h-screen px-4 py-12 sm:px-6 lg:px 8">
 <h1 className="text-4xl">Users</h1>
   <div className="w-full">

@@ -39,27 +39,27 @@ export default function lizamariel() {
                 <Image className="transform hover:scale-180 transition ease-out duration-300 rounded-md "
                     src={'/girlfriend/2.jpg'}
                     alt='girlfriendpicture'
-                    priority='true'
+                    priority={true}
                     layout="fill"
-                    quality="75"
+                    quality="50"
                 />
                 </div>
                 <div className='absolute container h-48 w-36 hover:scale-150 transition ease-out duration-300 right-5 rotate-12 drop-shadow-lg shadow-lg hover:rotate-45 lg:h-72 lg:w-56 lg:right-1/3 md:right-60'>
                 <Image className="transform hover:scale-180 transition ease-out duration-300 rounded-xl"
                     src={'/girlfriend/4.jpg'}
                     alt='girlfriendpicture'
-                    priority='true'
+                    priority={true}
                     layout="fill"
-                    quality="75"
+                    quality="50"
                 />
                 </div>
                 <div className='relative container h-64 w-48 hover:scale-150 transition ease-in-out duration-500 shadow-2xl  drop-shadow-2xl rounded-xl lg:h-96 lg:w-72'>
                 <Image className="transform hover:scale-180 transition ease-in-out duration-500 rounded-xl"
                     src={'/girlfriend/1.jpg'}
                     alt='girlfriendpicture'
-                    priority='true'
+                    priority={true}
                     layout="fill"
-                    quality="75"
+                    quality="50"
                     
                     
                 />

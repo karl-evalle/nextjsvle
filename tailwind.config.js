@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily:{
+        Gloria: ['Gloria Hallelujah', 'cursive']
+      },
       backgroundImage:{
         'main-image': "url(/NEU.jpg)"
       },
@@ -19,15 +22,18 @@ module.exports = {
       '3/4': '75%',
 
       'full': '100%',
-     }
+     },
+     animation: {
+        spin: 'spin 6s linear infinite'
+      }
   },
   variants: {
     extend: {
-      animation: ['hover', 'group-hover', 'focus', 'group-focus'] ,
+      animation: ['hover', 'group-hover', 'focus', 'group-focus', 'motion-safe','motion-reduce'] ,
       fontSize: ['group-focus','group-hover'],
       translate: ['group-focus','group-hover'],
       textColor : ['group-focus'],
-      transform : ['group-focus']
+      transform : ['group-focus','hover']
       
       
       

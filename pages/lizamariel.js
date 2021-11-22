@@ -9,7 +9,7 @@ export default function lizamariel() {
 
     return (
        
-        <div className="bg-yellow-200 min-h-screen max-h-screen max-w-scree flex flex-col justify-center">
+        <div className="bg-yellow-200 min-h-screen flex flex-col justify-center">
 
             <div className="items-center justify-center flex flex-col ">
                 <div className="grid grid-cols-3">
@@ -41,7 +41,7 @@ export default function lizamariel() {
                     alt='girlfriendpicture'
                     priority='true'
                     layout="fill"
-                    quality="100"
+                    quality="75"
                 />
                 </div>
                 <div className='absolute container h-48 w-36 hover:scale-150 transition ease-out duration-300 right-5 rotate-12 drop-shadow-lg shadow-lg hover:rotate-45 lg:h-72 lg:w-56 lg:right-1/3 md:right-60'>
@@ -50,7 +50,7 @@ export default function lizamariel() {
                     alt='girlfriendpicture'
                     priority='true'
                     layout="fill"
-                    quality="100"
+                    quality="75"
                 />
                 </div>
                 <div className='relative container h-64 w-48 hover:scale-150 transition ease-in-out duration-500 shadow-2xl  drop-shadow-2xl rounded-xl lg:h-96 lg:w-72'>
@@ -59,7 +59,7 @@ export default function lizamariel() {
                     alt='girlfriendpicture'
                     priority='true'
                     layout="fill"
-                    quality="100"
+                    quality="75"
                     
                     
                 />

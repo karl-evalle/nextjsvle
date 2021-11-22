@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { loadGetInitialProps } from 'next/dist/shared/lib/utils'
 
 
-export default function signin() {
+export default function Signin() {
     const router = useRouter()
     const [userDetails, setUserDetails] = useState({email:"",password:""})
 

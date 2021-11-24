@@ -41,7 +41,7 @@ export default function lizamariel() {
                     alt='girlfriendpicture'
                     priority={true}
                     layout="fill"
-                    quality="50"
+                    quality="75"
                 />
                 </div>
                 <div className='absolute container h-48 w-36 hover:scale-150 transition ease-out duration-300 right-5 rotate-12 drop-shadow-lg shadow-lg hover:rotate-45 lg:h-72 lg:w-56 lg:right-1/3 md:right-60'>
@@ -50,19 +50,11 @@ export default function lizamariel() {
                     alt='girlfriendpicture'
                     priority={true}
                     layout="fill"
-                    quality="50"
+                    quality="75"
                 />
                 </div>
                 <div className='relative container h-64 w-48 hover:scale-150 transition ease-in-out duration-500 shadow-2xl  drop-shadow-2xl rounded-xl lg:h-96 lg:w-72'>
-                <Image className="transform hover:scale-180 transition ease-in-out duration-500 rounded-xl"
-                    src={'/girlfriend/1.jpg'}
-                    alt='girlfriendpicture'
-                    priority={true}
-                    layout="fill"
-                    quality="50"
-                    
-                    
-                />
+                <img src="/girlfriend/1.jpg" className="transform hover:scale-180 transition-all ease-in-out duration-500 rounded-xl animate-fade-in" alt="img1"/>
                 </div>
           </div>
                 <div className="flex justify-center flex-col items-center my-5 max-w-32">

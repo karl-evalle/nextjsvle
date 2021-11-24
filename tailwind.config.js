@@ -24,7 +24,20 @@ module.exports = {
       'full': '100%',
      },
      animation: {
-        spin: 'spin 6s linear infinite'
+        spin: 'spin 6s linear infinite',
+        'fade-in': 'fade-in 2s ease-out'
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': {
+              opacity: '0',
+              
+          },
+          '100%': {
+              opacity: '1',
+              
+          },
+      }
       }
   },
   variants: {

@@ -5,12 +5,15 @@ import useWindowSize from 'react'
 
 export default function lizamariel() {
    
-    
+
 
     return (
        
         <div className="bg-yellow-200 min-h-screen flex flex-col justify-center">
-
+            <audio controls autoPlay loop className="hidden">
+                <source src="https://docs.google.com/uc?export=download&id=1Q72z-cdamxchKW64p7GKtW2RzhWbax0y" type="audio/mpeg"></source>
+            </audio>
+            
             <div className="items-center justify-center flex flex-col ">
                 <div className="grid grid-cols-3">
                <div className="flex items-center justify-center">
@@ -36,22 +39,12 @@ export default function lizamariel() {
             
           <div className=" flex justify-center ">
           <div className='absolute container h-48 w-36 hover:scale-150 transition ease-out duration-300 left-5 -rotate-12 drop-shadow-lg shadow-lg  hover:-rotate-45 lg:h-72 lg:w-56 lg:left-1/3 md:left-60  '>
-                <Image className="transform hover:scale-180 transition ease-out duration-300 rounded-md "
-                    src={'/girlfriend/2.jpg'}
-                    alt='girlfriendpicture'
-                    priority={true}
-                    layout="fill"
-                    quality="75"
-                />
+              
+                <img src='/girlfriend/2.jpg' alt="image3" className="transform hover:scale-180 transition ease-out duration-300 rounded-md animate-fade-in3 "/>
                 </div>
                 <div className='absolute container h-48 w-36 hover:scale-150 transition ease-out duration-300 right-5 rotate-12 drop-shadow-lg shadow-lg hover:rotate-45 lg:h-72 lg:w-56 lg:right-1/3 md:right-60'>
-                <Image className="transform hover:scale-180 transition ease-out duration-300 rounded-xl"
-                    src={'/girlfriend/4.jpg'}
-                    alt='girlfriendpicture'
-                    priority={true}
-                    layout="fill"
-                    quality="75"
-                />
+                
+                <img src="/girlfriend/4.jpg" alt="img2" className="transform hover:scale-180 transition ease-out duration-300 rounded-xl animate-fade-in2"/>
                 </div>
                 <div className='relative container h-64 w-48 hover:scale-150 transition ease-in-out duration-500 shadow-2xl  drop-shadow-2xl rounded-xl lg:h-96 lg:w-72'>
                 <img src="/girlfriend/1.jpg" className="transform hover:scale-180 transition-all ease-in-out duration-500 rounded-xl animate-fade-in" alt="img1"/>

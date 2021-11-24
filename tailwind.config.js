@@ -4,6 +4,19 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      keyframes: {
+        'fade-in': {
+          '0%': {
+              opacity: '0',
+              
+          },
+          '100%': {
+              opacity: '1',
+              
+          },
+      }
+      },
+
       fontFamily:{
         Gloria: ['Gloria Hallelujah', 'cursive']
       },
@@ -11,6 +24,7 @@ module.exports = {
         'main-image': "url(/NEU.jpg)"
       },
     },
+
     minWidth: {
 
       '0': '0',
@@ -23,22 +37,19 @@ module.exports = {
 
       'full': '100%',
      },
+
+
      animation: {
         spin: 'spin 6s linear infinite',
-        'fade-in': 'fade-in 2s ease-out'
+        'fade-in': 'fade-in 0.5s ease-out',
+        'fade-in2':'fade-in 3.5s ease-out',
+        'fade-in3':'fade-in 4.5s ease-out'
       },
-      keyframes: {
-        'fade-in': {
-          '0%': {
-              opacity: '0',
-              
-          },
-          '100%': {
-              opacity: '1',
-              
-          },
-      }
-      }
+
+
+
+
+      
   },
   variants: {
     extend: {

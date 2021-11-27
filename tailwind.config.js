@@ -41,7 +41,7 @@ module.exports = {
 
      animation: {
         spin: 'spin 6s linear infinite',
-        'fade-in': 'fade-in 0.5s ease-out',
+        'fade-in': 'fade-in 1s ease-out',
         'fade-in2':'fade-in 3.5s ease-out',
         'fade-in3':'fade-in 4.5s ease-out'
       },

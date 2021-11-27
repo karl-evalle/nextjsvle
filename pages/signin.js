@@ -19,6 +19,7 @@ export default function Signin() {
     const Login = userDetails => {
         if (userDetails.email == 'lizamariel' && userDetails.password == 'camero'){
             router.push('\lizamariel')
+            
         }
         else if (userDetails.email == 'karl' && userDetails.password == 'evalle'){
             router.push('\dashboard')

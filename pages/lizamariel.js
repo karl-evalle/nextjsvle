@@ -14,12 +14,12 @@ export default function lizamariel() {
                 <source src="https://docs.google.com/uc?export=download&id=1Q72z-cdamxchKW64p7GKtW2RzhWbax0y" type="audio/mpeg"></source>
             </audio>
             
-            <div className="items-center justify-center flex flex-col ">
+            <div className="items-center justify-center flex flex-col -mt-32 lg:-mt-3 mb-10 ">
                 <div className="grid grid-cols-3">
                <div className="flex items-center justify-center">
                <h1 className="flex text-3xl lg:text-5xl font-Gloria mx-auto">Liza</h1>
                </div>
-               <div className=" h-32 w-32 lg:h-60 lg:w-60 relative mx-auto">
+               <div className=" h-32 w-32 lg:h-32 lg:w-32 relative mx-auto">
                     <Image
                         className="animate-spin"
                         src={'/sunflower.svg'}
@@ -38,7 +38,7 @@ export default function lizamariel() {
             </div>
             
           <div className=" flex justify-center ">
-          <div className='absolute container h-48 w-36 hover:scale-150 transition ease-out duration-300 left-5 -rotate-12 drop-shadow-lg shadow-lg  hover:-rotate-45 lg:h-72 lg:w-56 lg:left-1/3 md:left-60  '>
+          <div className='absolute container h-48 w-36 hover:scale-150 transition ease-out duration-300 left-5 -rotate-12 drop-shadow-lg shadow-lg  hover:-rotate-45 lg:h-72 lg:w-56 lg:left-1/3 md:left-60'>
               
                 <img src='/girlfriend/2.jpg' alt="image3" className="transform hover:scale-180 transition ease-out duration-300 rounded-md animate-fade-in3 "/>
                 </div>

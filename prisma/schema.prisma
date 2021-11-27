@@ -15,12 +15,14 @@ datasource db {
 
 model Vleuser {
   id Int @id @default(autoincrement())
-  username String
-  password String
+  username String @db.VarChar(255)
+  password String @db.VarChar(255)
+
 }
 
-model Userprofile {
-   id Int @id @default(autoincrement())
-   firtname String
-   lastname String
+model Courses{
+  id Int @id @default(autoincrement())
+  coursename String @db.VarChar(255)
+  coursecode String @db.VarChar(255)
 }
+

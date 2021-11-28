@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export const Navbar2 = () => {
+export const Navbars = () => {
   return (
     <>
       <nav className='flex items-center flex-wrap bg-green-700 p-3 '>

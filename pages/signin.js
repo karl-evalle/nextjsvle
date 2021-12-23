@@ -4,9 +4,10 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { useState } from 'react'
 import { loadGetInitialProps } from 'next/dist/shared/lib/utils'
+import { prisma } from '@prisma/client'
 
 
-export default function Signin() {
+export default function Signin({check}) {
     const router = useRouter()
     const [userDetails, setUserDetails] = useState({email:"",password:""})
 
@@ -18,11 +19,14 @@ export default function Signin() {
 
     const Login = userDetails => {
         if (userDetails.email == 'lizamariel' && userDetails.password == 'camero'){
-            router.push('\lizamariel')
+            router.push('/lizamariel')
             
         }
-        else if (userDetails.email == 'karl' && userDetails.password == 'evalle'){
-            router.push('\dashboard')
+        // else if (userDetails.email == 'karl' && userDetails.password == 'evalle'){
+        //     router.push('/dashboard/' + '18-13416-913')
+        // }
+        else if(userDetails.email == 'ebalye' && userDetails.password == 'ebalye'){
+            router.push('/dashboard/18-13416-913' )
         }
         else{
             console.log('bawal ka pumasok')
@@ -58,3 +62,6 @@ export default function Signin() {
         </div>
     )
 }
+
+
+

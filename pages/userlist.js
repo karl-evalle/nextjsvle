@@ -2,6 +2,8 @@ import React from 'react'
 import {useState} from 'react'
 import prisma from '../lib/prisma'
 
+
+
 export default function Userlist({users}) {
     const [formData, setFormData] = useState({})
     const [user, setUsers] = useState(users)
@@ -13,10 +15,12 @@ export default function Userlist({users}) {
         const response = await fetch('/api/users', {
           method: 'POST',
           body:JSON.stringify(formData)
+          
         })
     
-    
+     
         return await response.json()
+        
     }
 
     return (
@@ -34,6 +38,9 @@ export default function Userlist({users}) {
             <th className='w-6/12' scope ='col'>
               Password
             </th>
+            <th className='w-6/12' scope ='col'>
+              email
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -41,6 +48,8 @@ export default function Userlist({users}) {
             <tr key={user.id}>
               <td>{user.username}</td>
               <td>{user.password}</td>
+              <td>{user.email}</td>
+
             </tr>
           ))}
         </tbody>

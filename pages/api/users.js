@@ -6,7 +6,17 @@ export default async(req, res) => {
 
 
     const createdUser = await prisma.vleuser.create({
-        data
+        data:{
+            username:data.username,
+            password:data.password,
+            email:data.email,
+            studentid:'1354809',
+            courses: undefined,
+            createdAt: undefined
+            
+            
+
+        }
     })
 
     res.json(createdUser)

@@ -17,12 +17,40 @@ model Vleuser {
   id Int @id @default(autoincrement())
   username String @db.VarChar(255)
   password String @db.VarChar(255)
+  email String @unique
+  studentid String @unique @db.VarChar(255)
+  courses Enrolled[] 
+  createdAt DateTime @default(now())
+
+}
+
+model Enrolled {
+  id Int @id @default(autoincrement())
+  student Vleuser @relation(fields:[studentId],references: [studentid])
+  studentId String @db.VarChar(255)
+  course Courses @relation(fields:[coursecode],references:[coursecode])
+  coursecode String @db.VarChar(255)
 
 }
 
 model Courses{
   id Int @id @default(autoincrement())
+ 
   coursename String @db.VarChar(255)
   coursecode String @db.VarChar(255)
+  courselink String @db.VarChar(255)
+  coursedescription String @db.VarChar(255)
+  enrolledStudents Enrolled[]
+  lessons Lessons[]
+  
 }
 
+model Lessons{
+  id Int @id @default(autoincrement())
+
+  lessonnumber String @db.VarChar(255)
+  course Courses @relation(fields:[coursecode],references: [coursecode])
+  coursecode String @db.VarChar(255)
+  lessondescription String @db.VarChar(255)
+  
+}

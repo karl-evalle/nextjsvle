@@ -1,14 +1,24 @@
-import 'tailwindcss/tailwind.css'
-
-
 import React from 'react'
 
-const testing = () => {
+export default function testing({lessons}) {
+    console.log({lessons})
     return (
         <div>
-            <div className="text-7xl malakingtext">text</div>
+            
         </div>
     )
 }
 
-export default testing
+
+export async function getServerSideProps() {
+    
+    const courseshit = 'cla-2575-53tl'
+    const lessons = await prisma.lessons.findMany({ where: { course:'cla-2575-53tl',  }, })
+    return {
+        props: {lessons}
+      };
+
+    
+  }
+
+

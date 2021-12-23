@@ -1,6 +1,6 @@
 module.exports = {
   mode:'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -21,7 +21,7 @@ module.exports = {
         Gloria: ['Gloria Hallelujah', 'cursive']
       },
       backgroundImage:{
-        'main-image': "url(/NEU.jpg)"
+        'main-image': "url(/NEU2.jpg)"
       },
     },
 
@@ -51,20 +51,6 @@ module.exports = {
 
       
   },
-  variants: {
-    extend: {
-      animation: ['hover', 'group-hover', 'focus', 'group-focus', 'motion-safe','motion-reduce'] ,
-      fontSize: ['group-focus','group-hover'],
-      translate: ['group-focus','group-hover'],
-      textColor : ['group-focus'],
-      transform : ['group-focus','hover']
-      
-      
-      
-     
-
-      
-    },
-  },
+  
   plugins: [],
 }

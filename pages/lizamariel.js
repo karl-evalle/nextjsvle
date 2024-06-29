@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Confetti from 'react-confetti'
+
 import useWindowSize from 'react'
 
 export default function lizamariel() {
